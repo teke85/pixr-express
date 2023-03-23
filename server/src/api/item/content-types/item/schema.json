@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "ShortDescription": {
+      "type": "richtext"
+    },
+    "longDescription": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "newArrivals",
+        "bestSellers",
+        "topRated",
+        "onPromo"
+      ]
+    },
+    "sizes": {
+      "type": "enumeration",
+      "enum": [
+        "Travel size: 0.25-0.5 oz (7-15 ml)",
+        "Miniature: 0.16-0.25 oz (5-7.5 ml)",
+        "Small: 1.0-1.7 oz (30-50 ml)",
+        "Medium: 2.0-3.4 oz (60-100 ml)",
+        "Large: 4.0 oz or more (120 ml or more)"
+      ]
+    },
+    "thumbnail_images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
